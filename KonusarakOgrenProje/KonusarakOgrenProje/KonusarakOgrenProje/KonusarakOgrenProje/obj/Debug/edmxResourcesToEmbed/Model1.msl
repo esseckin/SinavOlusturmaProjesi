@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="KonusarakOgrenProjeDBModelStoreContainer" CdmEntityContainer="KonusarakOgrenProjeDBEntities5">
+    <EntitySetMapping Name="Sınavlar">
+      <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Sınavlar">
+        <MappingFragment StoreEntitySet="Sınavlar">
+          <ScalarProperty Name="sınavId" ColumnName="sınavId" />
+          <ScalarProperty Name="baslik" ColumnName="baslik" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sorularr">
+      <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Sorularr">
+        <MappingFragment StoreEntitySet="Sorularr">
+          <ScalarProperty Name="soruId" ColumnName="soruId" />
+          <ScalarProperty Name="sınavId" ColumnName="sınavId" />
+          <ScalarProperty Name="soru1" ColumnName="soru1" />
+          <ScalarProperty Name="soru2" ColumnName="soru2" />
+          <ScalarProperty Name="soru3" ColumnName="soru3" />
+          <ScalarProperty Name="soru4" ColumnName="soru4" />
+          <ScalarProperty Name="cvpA" ColumnName="cvpA" />
+          <ScalarProperty Name="cvpB" ColumnName="cvpB" />
+          <ScalarProperty Name="cvpC" ColumnName="cvpC" />
+          <ScalarProperty Name="cvpD" ColumnName="cvpD" />
+          <ScalarProperty Name="DogruCvp" ColumnName="DogruCvp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Uyeler">
+      <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Uyeler">
+        <MappingFragment StoreEntitySet="Uyeler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KullanıcıAdı" ColumnName="KullanıcıAdı" />
+          <ScalarProperty Name="Parola" ColumnName="Parola" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

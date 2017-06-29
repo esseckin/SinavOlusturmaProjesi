@@ -1,0 +1,26 @@
+﻿.tableclass {
+    border: 1px black;
+}
+
+.uzunmetin {
+    margin-right: auto;
+    margin-left: auto;
+    position: center;
+}
+
+td {
+    border: 1px black;
+}
+
+.auto-style1 {
+    width: 203px;
+}
+
+.auto-style2 {
+    width: 203px;
+    height: 33px;
+}
+
+.auto-style3 {
+    height: 33px;
+}

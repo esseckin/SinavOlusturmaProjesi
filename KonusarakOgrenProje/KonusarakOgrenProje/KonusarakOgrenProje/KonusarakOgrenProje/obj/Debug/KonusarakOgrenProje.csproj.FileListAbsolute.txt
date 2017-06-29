@@ -1,0 +1,78 @@
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\ApplicationInsights.config
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\csc.exe
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\System.Collections.Immutable.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\vbc.exe
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\VBCSCompiler.exe
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\VBCSCompiler.exe.config
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.dll.config
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.pdb
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Web.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.WindowsServer.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.ApplicationInsights.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Web.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.WindowsServer.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.ApplicationInsights.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.csprojResolveAssemblyReference.cache
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.dll
+c:\users\sehertosh\documents\visual studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.pdb
+C:\Users\sehertosh\Documents\Visual Studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.dll
+C:\Users\sehertosh\Documents\Visual Studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.pdb
+C:\Users\sehertosh\Documents\Visual Studio 2015\Projects\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\ApplicationInsights.config
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\csc.exe
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\vbc.exe
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\VBCSCompiler.exe
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.dll.config
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\KonusarakOgrenProje.pdb
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Web.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.pdb
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\HtmlAgilityPack.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.Web.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.csprojResolveAssemblyReference.cache
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\obj\Debug\KonusarakOgrenProje.pdb
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\EntityFramework.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\EntityFramework.SqlServer.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\EntityFramework.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\EntityFramework.SqlServer.xml
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Newtonsoft.Json.dll
+C:\Users\sehertosh\Desktop\KonusarakOgrenProje\KonusarakOgrenProje\bin\Newtonsoft.Json.xml

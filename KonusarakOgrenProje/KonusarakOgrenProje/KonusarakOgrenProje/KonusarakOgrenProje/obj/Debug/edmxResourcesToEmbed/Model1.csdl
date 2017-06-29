@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="KonusarakOgrenProjeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sınavlar">
+    <Key>
+      <PropertyRef Name="sınavId" />
+    </Key>
+    <Property Name="sınavId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="tarih" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Sorularr" Relationship="Self.FK_Sorularr_Sınavlar" FromRole="Sınavlar" ToRole="Sorularr" />
+  </EntityType>
+  <EntityType Name="Sorularr">
+    <Key>
+      <PropertyRef Name="soruId" />
+    </Key>
+    <Property Name="soruId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sınavId" Type="Int32" />
+    <Property Name="soru1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="soru2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="soru3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="soru4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cvpA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cvpB" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cvpC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="cvpD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DogruCvp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Sınavlar" Relationship="Self.FK_Sorularr_Sınavlar" FromRole="Sorularr" ToRole="Sınavlar" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Uyeler">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Sorularr_Sınavlar">
+    <End Role="Sınavlar" Type="Self.Sınavlar" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Sorularr" Type="Self.Sorularr" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sınavlar">
+        <PropertyRef Name="sınavId" />
+      </Principal>
+      <Dependent Role="Sorularr">
+        <PropertyRef Name="sınavId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="KonusarakOgrenProjeDBEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sınavlar" EntityType="Self.Sınavlar" />
+    <EntitySet Name="Sorularr" EntityType="Self.Sorularr" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Uyeler" EntityType="Self.Uyeler" />
+    <AssociationSet Name="FK_Sorularr_Sınavlar" Association="Self.FK_Sorularr_Sınavlar">
+      <End Role="Sınavlar" EntitySet="Sınavlar" />
+      <End Role="Sorularr" EntitySet="Sorularr" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

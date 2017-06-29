@@ -1,0 +1,17 @@
+﻿ .uzunmetin {
+            margin-right: auto;
+            margin-left: auto;
+            position: center;
+        }
+
+        table, th, td {
+            border: 1px black;
+        }
+
+        .auto-style1 {
+            width: 305px;
+        }
+
+        .auto-style2 {
+            height: 16px;
+        }

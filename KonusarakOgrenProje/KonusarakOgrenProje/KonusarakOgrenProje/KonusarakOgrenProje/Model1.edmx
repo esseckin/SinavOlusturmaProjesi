@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="KonusarakOgrenProjeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Sınavlar">
+          <Key>
+            <PropertyRef Name="sınavId" />
+          </Key>
+          <Property Name="sınavId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="baslik" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="tarih" Type="date" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Sorularr">
+          <Key>
+            <PropertyRef Name="soruId" />
+          </Key>
+          <Property Name="soruId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="sınavId" Type="int" />
+          <Property Name="soru1" Type="nvarchar(max)" />
+          <Property Name="soru2" Type="nvarchar(max)" />
+          <Property Name="soru3" Type="nvarchar(max)" />
+          <Property Name="soru4" Type="nvarchar(max)" />
+          <Property Name="cvpA" Type="nvarchar(max)" />
+          <Property Name="cvpB" Type="nvarchar(max)" />
+          <Property Name="cvpC" Type="nvarchar(max)" />
+          <Property Name="cvpD" Type="nvarchar(max)" />
+          <Property Name="DogruCvp" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullanıcıAdı" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Parola" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Sorularr_Sınavlar">
+          <End Role="Sınavlar" Type="Self.Sınavlar" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Sorularr" Type="Self.Sorularr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sınavlar">
+              <PropertyRef Name="sınavId" />
+            </Principal>
+            <Dependent Role="Sorularr">
+              <PropertyRef Name="sınavId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KonusarakOgrenProjeDBModelStoreContainer">
+          <EntitySet Name="Sınavlar" EntityType="Self.Sınavlar" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sorularr" EntityType="Self.Sorularr" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Sorularr_Sınavlar" Association="Self.FK_Sorularr_Sınavlar">
+            <End Role="Sınavlar" EntitySet="Sınavlar" />
+            <End Role="Sorularr" EntitySet="Sorularr" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="KonusarakOgrenProjeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Sınavlar">
+          <Key>
+            <PropertyRef Name="sınavId" />
+          </Key>
+          <Property Name="sınavId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="baslik" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="tarih" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Sorularr" Relationship="Self.FK_Sorularr_Sınavlar" FromRole="Sınavlar" ToRole="Sorularr" />
+        </EntityType>
+        <EntityType Name="Sorularr">
+          <Key>
+            <PropertyRef Name="soruId" />
+          </Key>
+          <Property Name="soruId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="sınavId" Type="Int32" />
+          <Property Name="soru1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="soru2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="soru3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="soru4" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cvpA" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cvpB" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cvpC" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="cvpD" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DogruCvp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Sınavlar" Relationship="Self.FK_Sorularr_Sınavlar" FromRole="Sorularr" ToRole="Sınavlar" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Uyeler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullanıcıAdı" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Parola" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Sorularr_Sınavlar">
+          <End Role="Sınavlar" Type="Self.Sınavlar" Multiplicity="0..1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Sorularr" Type="Self.Sorularr" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Sınavlar">
+              <PropertyRef Name="sınavId" />
+            </Principal>
+            <Dependent Role="Sorularr">
+              <PropertyRef Name="sınavId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="KonusarakOgrenProjeDBEntities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Sınavlar" EntityType="Self.Sınavlar" />
+          <EntitySet Name="Sorularr" EntityType="Self.Sorularr" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+          <EntitySet Name="Uyeler" EntityType="Self.Uyeler" />
+          <AssociationSet Name="FK_Sorularr_Sınavlar" Association="Self.FK_Sorularr_Sınavlar">
+            <End Role="Sınavlar" EntitySet="Sınavlar" />
+            <End Role="Sorularr" EntitySet="Sorularr" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="KonusarakOgrenProjeDBModelStoreContainer" CdmEntityContainer="KonusarakOgrenProjeDBEntities5">
+          <EntitySetMapping Name="Sınavlar">
+            <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Sınavlar">
+              <MappingFragment StoreEntitySet="Sınavlar">
+                <ScalarProperty Name="sınavId" ColumnName="sınavId" />
+                <ScalarProperty Name="baslik" ColumnName="baslik" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sorularr">
+            <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Sorularr">
+              <MappingFragment StoreEntitySet="Sorularr">
+                <ScalarProperty Name="soruId" ColumnName="soruId" />
+                <ScalarProperty Name="sınavId" ColumnName="sınavId" />
+                <ScalarProperty Name="soru1" ColumnName="soru1" />
+                <ScalarProperty Name="soru2" ColumnName="soru2" />
+                <ScalarProperty Name="soru3" ColumnName="soru3" />
+                <ScalarProperty Name="soru4" ColumnName="soru4" />
+                <ScalarProperty Name="cvpA" ColumnName="cvpA" />
+                <ScalarProperty Name="cvpB" ColumnName="cvpB" />
+                <ScalarProperty Name="cvpC" ColumnName="cvpC" />
+                <ScalarProperty Name="cvpD" ColumnName="cvpD" />
+                <ScalarProperty Name="DogruCvp" ColumnName="DogruCvp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Uyeler">
+            <EntityTypeMapping TypeName="KonusarakOgrenProjeDBModel.Uyeler">
+              <MappingFragment StoreEntitySet="Uyeler">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="KullanıcıAdı" ColumnName="KullanıcıAdı" />
+                <ScalarProperty Name="Parola" ColumnName="Parola" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
